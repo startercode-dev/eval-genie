@@ -16,32 +16,36 @@
   <body class="bg-black text-white">
     <!-- BODY -->
     <nav
-      class="absolute left-1/2 z-10 flex w-full max-w-[1920px] -translate-x-1/2 items-center justify-between px-24 pt-6 font-poppins font-semibold tracking-wider"
+      class="absolute left-1/2 z-10 flex w-full -translate-x-1/2 justify-center pt-6 font-poppins font-semibold tracking-wider"
     >
-      <img src="./img/evalgenie-logo.svg" alt="logo" class="w-60" />
-      <div class="flex gap-12 text-base">
-        <a href="">HOME</a>
-        <a href="">FEATURES</a>
-        <a href="">FAQS</a>
-        <a href="">CONTACT US</a>
-      </div>
-      <div class="flex gap-8">
-        <a class="px-10 py-4" href="">LOGIN</a>
-        <a class="primary-btn bg-light px-10 py-4 text-black" href=""
-          >REGISTER</a
-        >
+      <div
+        class="flex w-full max-w-[1920px] items-center justify-between px-24"
+      >
+        <img src="./img/evalgenie-logo.svg" alt="logo" class="w-60" />
+        <div class="flex gap-12 text-base">
+          <a href="">HOME</a>
+          <a href="">FEATURES</a>
+          <a href="">FAQS</a>
+          <a href="">CONTACT US</a>
+        </div>
+        <div class="flex gap-8">
+          <a class="px-10 py-4" href="">LOGIN</a>
+          <a class="primary-btn bg-light px-10 py-4 text-black" href=""
+            >REGISTER</a
+          >
+        </div>
       </div>
     </nav>
 
     <section
-      class="relative flex h-[100svh] w-full items-center justify-center bg-gradient-to-r from-black from-[33%] to-[#02020220] px-24 font-poppins"
+      class="relative flex h-[100svh] w-full items-center justify-center bg-gradient-to-r from-black from-[33%] to-[#02020220] font-poppins"
     >
       <img
         class="absolute -left-1/2 -z-10 h-full w-full translate-x-1/2 object-cover object-right-top"
         src="./img/hero-img.png"
         alt=""
       />
-      <div class="flex w-full max-w-[1920px] flex-col gap-12">
+      <div class="flex w-full max-w-[1920px] flex-col gap-12 px-24">
         <h1 class="w-[37rem] font-mont text-7xl font-bold leading-[1.2]">
           Empowering US Army Professionals
         </h1>
@@ -57,8 +61,10 @@
       </div>
     </section>
 
-    <section class="flex w-full items-center justify-center px-24 py-[15vh]">
-      <div class="flex w-full max-w-[1920px] gap-16">
+    <section
+      class="my-[15vh] flex w-full items-center justify-center overflow-x-hidden"
+    >
+      <div class="flex w-full max-w-[1920px] gap-16 px-24">
         <div class="flex-1">
           <h2 class="max-w-lg font-mont text-5xl font-semibold">
             Our
@@ -140,6 +146,156 @@
               AI and Human support to resolve issues quickly.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-[15vh] flex w-full items-center justify-center">
+      <div class="relative flex w-full max-w-[1920px] gap-16 px-24">
+        <img class="absolute -left-44 -top-32" src="./img/bg-dots.svg" alt="" />
+        <div class="flex-1">
+          <h2 class="max-w-lg font-mont text-5xl font-semibold">
+            <span
+              class="bg-gradient-to-r from-primary to-light bg-clip-text text-transparent"
+              >Frequently</span
+            >
+            Ask Questions
+          </h2>
+          <p class="mt-8 max-w-lg font-poppins text-lg font-light">
+            Have questions for us? We got answers. Or feel free to
+            <span
+              class="bg-gradient-to-r from-primary to-light bg-clip-text font-semibold text-transparent"
+              >reach out to us</span
+            >.
+          </p>
+        </div>
+
+        <div class="flex-[2]">
+          <ul
+            class="accordion rounded-lg border border-[#81C3D730] bg-gradient-to-b from-[#0202029d] from-20% to-[#05284137] shadow-[0_0_20px_#81C3D720]"
+          >
+            <li class="accordion-item">
+              <div class="flex flex-col gap-6 border-b pb-8">
+                <div class="flex justify-between">
+                  <h3 class="">What is EvalGenie?</h3>
+                  <img
+                    class="mr-4 w-5"
+                    src="/src/img/caretDown.svg"
+                    alt="Caret Down"
+                  />
+                </div>
+                <div class="">
+                  <p
+                    class="w-11/12 font-poppins text-lg font-light leading-normal tracking-wider text-light-grey"
+                  >
+                    EvalGenie revolutionizes Army performance evaluations with
+                    an AI-powered service, easing the process for NCOs,
+                    Officers, and Warrant Officers. Founded by Army National
+                    Guard members, we're a supportive community helping service
+                    members excel.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-item">
+              <div class="flex flex-col gap-6 border-b pb-8">
+                <div class="flex justify-between">
+                  <h3 class="">How does it work?</h3>
+                  <img
+                    class="mr-4 w-5"
+                    src="/src/img/caretDown.svg"
+                    alt="Caret Down"
+                  />
+                </div>
+                <div class="hidden">
+                  <p
+                    class="w-11/12 font-poppins text-lg font-light leading-normal tracking-wider text-light-grey"
+                  >
+                    Upon account creation, you will get limited access to
+                    explore the available features. The Accomplishment Journal
+                    will always be free to use as long as you have an account.
+                    Once the trial period is over, you can choose from one of
+                    our two plans. Both plans allow you to utilize all available
+                    tools within the platform, depending on your needs.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-item">
+              <div class="flex flex-col gap-6 border-b pb-8">
+                <div class="flex justify-between">
+                  <h3 class="">Can I trust EvalGenie?</h3>
+                  <img
+                    class="mr-4 w-5"
+                    src="/src/img/caretDown.svg"
+                    alt="Caret Down"
+                  />
+                </div>
+                <div class="hidden">
+                  <p
+                    class="w-11/12 font-poppins text-lg font-light leading-normal tracking-wider text-light-grey"
+                  >
+                    EvalGenie is owned, operated, maintained, and hosted in the
+                    United States. The founder and Managing Member is a current
+                    United States Army National Guard Veteran with 17 years of
+                    service. His roles both within the military and civilian
+                    employment consist of Cyber Security, Cyber Operations, and
+                    AI Development.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-item">
+              <div class="flex flex-col gap-6 border-b pb-8">
+                <div class="flex justify-between">
+                  <h3 class="">Why choose EvalGenie?</h3>
+                  <img
+                    class="mr-4 w-5"
+                    src="/src/img/caretDown.svg"
+                    alt="Caret Down"
+                  />
+                </div>
+                <div class="hidden">
+                  <p
+                    class="w-11/12 font-poppins text-lg font-light leading-normal tracking-wider text-light-grey"
+                  >
+                    With the new NCOER/OER system in place, it is a career
+                    killer to use generic, bland, boilerplate bullets or
+                    comments to describe your performance. We don't do that
+                    here. We take your real-world accomplishments and turn them
+                    into copy-and-paste-ready bullets that would make any Senior
+                    Leader proud.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-item">
+              <div class="flex flex-col gap-6 pb-8">
+                <div class="flex justify-between">
+                  <h3 class="">Is my information safe?</h3>
+                  <img
+                    class="mr-4 w-5"
+                    src="/src/img/caretDown.svg"
+                    alt="Caret Down"
+                  />
+                </div>
+                <div class="hidden">
+                  <p
+                    class="w-11/12 font-poppins text-lg font-light leading-normal tracking-wider text-light-grey"
+                  >
+                    We consistently consult with Infrastructure, Developer, and
+                    Security consultants to ensure EvalGenie is safe. Our team
+                    constantly improves EvalGenie to maintain compliance with
+                    best practices and standards. We regularly back up and
+                    secure your data both at rest and in transit. Additionally,
+                    we have policies in place to remove data that is no longer
+                    needed for the successful utilization of current and future
+                    services.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

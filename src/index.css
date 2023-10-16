@@ -19,5 +19,9 @@
 }
 
 .card {
-    @apply flex flex-col items-center justify-center gap-4 rounded-lg border border-[#81C3D730] bg-gradient-to-t from-[#0202029d] from-50% to-[#042d4a4b] px-20 py-10 shadow-[0_0_20px_#81C3D720];
+    @apply flex flex-col items-center justify-center gap-4 rounded-lg border border-[#81C3D730] bg-gradient-to-b from-[#0202029d] from-50% to-[#05284154] px-20 py-10 shadow-[0_0_20px_#81C3D720];
+}
+
+.accordion-item {
+    @apply px-8 pt-8 font-mont text-2xl font-medium text-light;
 }
