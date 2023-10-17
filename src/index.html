@@ -14,29 +14,70 @@
     <title></title>
   </head>
   <body class="bg-black text-white">
-    <div class="overflow-y-clip">
+    <div class="relative overflow-y-clip">
       <!-- NAV -->
-      <!-- <nav
+      <div
+        class="overlay absolute left-0 top-0 z-10 hidden h-full w-full bg-[#02020233] backdrop-blur-sm 2xl:hidden"
+      ></div>
+      <header
         class="absolute left-1/2 z-10 flex w-full -translate-x-1/2 justify-center pt-6 font-poppins font-semibold tracking-wider"
       >
         <div
-          class="flex w-full max-w-[1920px] items-center justify-between px-24"
+          class="relative flex w-full max-w-[1920px] items-center justify-between px-24"
         >
           <img src="./img/evalgenie-logo.svg" alt="logo" class="w-60" />
-          <div class="flex gap-12 text-base">
+          <nav class="flex gap-12 text-base max-2xl:hidden">
             <a href="">HOME</a>
             <a href="">FEATURES</a>
             <a href="">FAQS</a>
             <a href="">CONTACT US</a>
-          </div>
-          <div class="flex gap-8">
+            <div
+              class="flex flex-col items-center gap-4 border-t pt-4 2xl:hidden"
+            >
+              <a class="px-10 py-4" href="">LOGIN</a>
+              <a
+                class="primary-btn w-80 bg-light px-10 py-4 text-center text-black"
+                href=""
+                >REGISTER</a
+              >
+            </div>
+          </nav>
+          <nav class="mobile-nav 2xl:hidden">
+            <a href="">HOME</a>
+            <a href="">FEATURES</a>
+            <a href="">FAQS</a>
+            <a href="">CONTACT US</a>
+            <div
+              class="flex flex-col items-center gap-4 border-t pt-4 2xl:hidden"
+            >
+              <a class="px-10 py-4" href="">LOGIN</a>
+              <a
+                class="primary-btn w-80 bg-light px-10 py-4 text-center text-black"
+                href=""
+                >REGISTER</a
+              >
+            </div>
+          </nav>
+          <div class="flex gap-8 max-2xl:hidden">
             <a class="px-10 py-4" href="">LOGIN</a>
             <a class="primary-btn bg-light px-10 py-4 text-black" href=""
               >REGISTER</a
             >
           </div>
+          <div class="mobile-menu hidden max-2xl:block">
+            <img
+              class="menu w-10"
+              src="/src/img/mobile-menu-hamburger.svg"
+              alt="Hamburger Icon"
+            />
+            <img
+              class="close hidden w-10"
+              src="/src/img/mobile-menu-close.svg"
+              alt="Close Icon"
+            />
+          </div>
         </div>
-      </nav> -->
+      </header>
 
       <!-- HERO SECTION -->
       <section
