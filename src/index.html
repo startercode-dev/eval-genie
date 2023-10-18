@@ -95,15 +95,15 @@
           alt=""
         />
         <div
-          class="mt-14 flex w-full max-w-[1920px] flex-col gap-12 px-24 max-lg:items-center max-lg:text-center max-md:px-12 max-sm:px-8"
+          class="hero-section mt-14 flex w-full max-w-[1920px] flex-col gap-12 px-24 max-lg:items-center max-lg:text-center max-md:px-12 max-sm:px-8"
         >
           <h1
-            class="w-[37rem] font-mont text-7xl font-bold !leading-tight max-2xl:w-[25rem] max-2xl:text-6xl max-md:text-5xl max-sm:w-[16rem] max-sm:text-4xl"
+            class="init-animation w-[37rem] font-mont text-7xl font-bold !leading-tight transition-all duration-[600ms] ease-out max-2xl:w-[25rem] max-2xl:text-6xl max-md:text-5xl max-sm:w-[16rem] max-sm:text-4xl"
           >
             Empowering US Army Professionals
           </h1>
           <div
-            class="flex gap-8 text-base font-semibold tracking-wider max-md:w-full max-md:flex-col max-md:text-sm lg:max-2xl:text-sm"
+            class="cta-btns init-animation flex gap-8 text-base font-semibold tracking-wider transition-all delay-500 duration-[600ms] ease-in max-md:w-full max-md:flex-col max-md:text-sm lg:max-2xl:text-sm"
           >
             <a
               class="primary-btn max-md:primary-btn-wide bg-light px-8 py-4 text-black"
@@ -113,7 +113,7 @@
             <a class="px-8 py-4 text-light" href="">CONTACT US</a>
           </div>
           <p
-            class="mt-20 text-xl font-light tracking-widest max-2xl:text-lg max-md:mt-10 max-md:text-base max-sm:mt-0"
+            class="hero-p init-animation mt-20 text-xl font-light tracking-widest transition-all delay-500 duration-[600ms] ease-in max-2xl:text-lg max-md:mt-10 max-md:text-base max-sm:mt-0"
           >
             Veteran Owned and Operated Small Business
           </p>
@@ -124,9 +124,11 @@
       <div class="overflow-x-clip">
         <section class="my-[15vh] flex w-full items-center justify-center">
           <div
-            class="flex w-full max-w-[1920px] gap-16 px-24 max-xl:flex-col max-lg:gap-10 max-md:px-12 max-sm:px-8"
+            class="features-section flex w-full max-w-[1920px] gap-16 px-24 max-xl:flex-col max-lg:gap-10 max-md:px-12 max-sm:px-8"
           >
-            <div class="flex-1">
+            <div
+              class="left-col-features init-animation flex-1 transition-all duration-500 ease-in"
+            >
               <h2
                 class="max-w-lg font-mont text-5xl font-semibold leading-[1.1] max-2xl:text-4xl"
               >
@@ -146,7 +148,7 @@
             </div>
 
             <div
-              class="relative grid flex-[2] grid-cols-2 gap-16 max-2xl:gap-12 max-lg:grid-cols-1 max-lg:gap-10"
+              class="card-container init-animation relative grid flex-[2] grid-cols-2 gap-16 transition-all delay-300 duration-500 ease-in max-2xl:gap-12 max-lg:grid-cols-1 max-lg:gap-10"
             >
               <img
                 class="absolute -left-96 -top-44 -z-10"
@@ -248,14 +250,16 @@
       <!-- FAQS SECTION -->
       <section class="my-[15vh] flex w-full items-center justify-center">
         <div
-          class="relative flex w-full max-w-[1920px] gap-16 px-24 max-xl:flex-col max-lg:gap-10 max-md:px-12 max-sm:px-8"
+          class="faqs-section relative flex w-full max-w-[1920px] gap-16 px-24 max-xl:flex-col max-lg:gap-10 max-md:px-12 max-sm:px-8"
         >
           <img
             class="absolute -left-44 -top-32"
             src="./img/bg-dots.svg"
             alt=""
           />
-          <div class="flex-1">
+          <div
+            class="faqs-heading init-animation flex-1 transition-all duration-500 ease-in"
+          >
             <h2
               class="font-mont text-5xl font-semibold leading-[1.1] max-2xl:text-4xl"
             >
@@ -276,7 +280,9 @@
             </p>
           </div>
 
-          <div class="flex-[2]">
+          <div
+            class="faqs-collapsibles init-animation flex-[2] transition-all delay-300 duration-500 ease-in"
+          >
             <ul
               class="accordion rounded-lg border border-[#81C3D730] bg-gradient-to-b from-[#0202029d] from-20% to-[#05284137] shadow-[0_0_20px_#81C3D720]"
             >
@@ -440,8 +446,12 @@
               src="./img/bg-lines.svg"
               alt=""
             />
-            <div class="flex gap-16 max-xl:flex-col max-xl:gap-8">
-              <div class="flex flex-1 flex-col gap-6 lg:max-2xl:gap-4">
+            <div
+              class="contact-section flex gap-16 max-xl:flex-col max-xl:gap-8"
+            >
+              <div
+                class="col-1-container init-animation flex flex-1 flex-col gap-6 transition-all duration-500 ease-in lg:max-2xl:gap-4"
+              >
                 <h2 class="font-mont text-5xl font-semibold max-2xl:text-4xl">
                   <span
                     class="bg-gradient-to-r from-primary to-light bg-clip-text text-transparent"
@@ -463,7 +473,9 @@
                 ></div>
               </div>
 
-              <div class="flex-[2]">
+              <div
+                class="col-2-container init-animation flex-[2] transition-all delay-300 duration-500 ease-in"
+              >
                 <form
                   class="flex h-full flex-col gap-8 font-mont text-xl font-light text-white max-2xl:gap-5 max-2xl:text-lg"
                   action=""

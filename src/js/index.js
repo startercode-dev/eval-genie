@@ -59,7 +59,51 @@ class Accordion {
         $(currItem).find('.caret-icon').addClass('caret-up');
     }
 }
+
+class SectionAnimation {
+    constructor() {
+        this.hero = $('.hero-section');
+        this.features = $('.features-section');
+        this.faqs = $('.faqs-section');
+        this.contact = $('.contact-section');
+        this.events();
+    }
+
+    //EVENT
+    events() {
+        this.observer(this.hero, 'h1');
+        this.observer(this.hero, '.hero-p');
+        this.observer(this.hero, '.cta-btns');
+        this.observer(this.features, '.left-col-features');
+        this.observer(this.features, '.card-container');
+        this.observer(this.faqs, '.faqs-heading');
+        this.observer(this.faqs, '.faqs-collapsibles');
+        this.observer(this.contact, '.col-1-container');
+        this.observer(this.contact, '.col-2-container');
+    }
+
+    //MODULES
+    observer(section, className) {
+        const featuresObserver = new IntersectionObserver(
+            this.runAnimation.bind('', className),
+            {
+                root: null,
+                threshold: 0.15,
+            },
+        );
+        featuresObserver.observe(section[0]);
+    }
+    runAnimation(className, entries) {
+        entries.forEach((entry) => {
+            console.log($(className));
+            if (entry.isIntersecting) {
+                $(className).removeClass('init-animation');
+            }
+        });
+    }
+}
 $(function () {
     new ResponsiveNav();
     new Accordion();
+    new SectionAnimation();
 });

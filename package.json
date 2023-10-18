@@ -1,7 +1,7 @@
 {
-    "name": "create-js-template",
-    "version": "1.1.0",
-    "description": "js/html/tailwindcss starting template",
+    "name": "evalgenie",
+    "version": "1.0.0",
+    "description": "EvalGenie landing page",
     "keywords": [
         "javascript",
         "tailwind",
@@ -12,14 +12,14 @@
         "frontend"
     ],
     "bin": "./bin/cli.js",
-    "browserslist": "> 0.5%, last 2 versions, not dead",
+    "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead",
     "scripts": {
         "dev": "parcel src/index.html --dist-dir src/dist --open",
         "build": "parcel build src/index.html --dist-dir src/dist"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/startercode-dev/create-js-template.git"
+        "url": ""
     },
     "author": "",
     "license": "ISC",
