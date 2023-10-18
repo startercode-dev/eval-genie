@@ -16,6 +16,11 @@ module.exports = {
                 'light-grey': '#d9dcd6',
                 white: '#d9d9d9',
             },
+            screens: {
+                sm: '320px',
+                md: '640px',
+                lg: '970px',
+            },
         },
     },
     plugins: [],
