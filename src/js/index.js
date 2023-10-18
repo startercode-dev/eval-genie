@@ -95,7 +95,6 @@ class SectionAnimation {
     }
     runAnimation(className, entries) {
         entries.forEach((entry) => {
-            console.log($(className));
             if (entry.isIntersecting) {
                 $(className).removeClass('init-animation');
             }
