@@ -17,7 +17,8 @@ module.exports = {
                 white: '#d9d9d9',
             },
             screens: {
-                sm: '320px',
+                xs: '375px',
+                sm: '475px',
                 md: '640px',
                 lg: '970px',
             },

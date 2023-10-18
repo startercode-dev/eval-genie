@@ -19,6 +19,20 @@
         );
     }
 
+    .primary-btn-wide {
+        border: none;
+        clip-path: polygon(
+            3% 0%,
+            100% 0%,
+            100% 20%,
+            100% 75%,
+            97% 100%,
+            0% 100%,
+            0% 80%,
+            0% 26%
+        );
+    }
+
     .card {
         @apply flex flex-col items-center justify-center gap-4 rounded-lg border border-[#81C3D730] bg-gradient-to-b from-[#0202029d] from-50% to-[#05284154] px-20 py-10 shadow-[0_0_20px_#81C3D720];
     }

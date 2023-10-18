@@ -15,17 +15,21 @@
   </head>
   <body class="bg-black text-white">
     <div class="relative overflow-y-clip">
-      <!-- NAV -->
       <div
         class="overlay absolute left-0 top-0 z-10 hidden h-full w-full bg-[#02020233] backdrop-blur-sm 2xl:hidden"
       ></div>
+      <!-- NAV -->
       <header
         class="absolute left-1/2 z-10 flex w-full -translate-x-1/2 justify-center pt-6 font-poppins font-semibold tracking-wider"
       >
         <div
-          class="relative flex w-full max-w-[1920px] items-center justify-between px-24"
+          class="relative flex w-full max-w-[1920px] items-center justify-between px-24 max-md:px-12 max-sm:px-8"
         >
-          <img src="./img/evalgenie-logo.svg" alt="logo" class="w-60" />
+          <img
+            src="./img/evalgenie-logo.svg"
+            alt="logo"
+            class="w-60 max-lg:w-52 max-md:w-40"
+          />
           <nav class="flex gap-12 text-base max-2xl:hidden">
             <a href="">HOME</a>
             <a href="">FEATURES</a>
@@ -43,7 +47,7 @@
             </div>
           </nav>
           <!-- MOBILE NAV -->
-          <nav class="mobile-nav 2xl:hidden">
+          <nav class="mobile-nav max-sm:gap-8 2xl:hidden">
             <a href="">HOME</a>
             <a href="">FEATURES</a>
             <a href="">FAQS</a>
@@ -53,13 +57,13 @@
             >
               <a class="px-10 py-4" href="">LOGIN</a>
               <a
-                class="primary-btn w-80 bg-light px-10 py-4 text-center text-black"
+                class="primary-btn max-2xl:primary-btn-wide w-80 bg-light px-10 py-4 text-center text-black"
                 href=""
                 >REGISTER</a
               >
             </div>
           </nav>
-          <!-- ---- -->
+          <!-- ^^^^^ -->
           <div class="flex gap-8 max-2xl:hidden">
             <a class="px-10 py-4" href="">LOGIN</a>
             <a class="primary-btn bg-light px-10 py-4 text-black" href=""
@@ -68,12 +72,12 @@
           </div>
           <div class="mobile-menu hidden max-2xl:block">
             <img
-              class="menu w-10"
+              class="menu w-10 max-lg:w-9 max-md:w-8"
               src="/src/img/mobile-menu-hamburger.svg"
               alt="Hamburger Icon"
             />
             <img
-              class="close hidden w-10"
+              class="close hidden w-10 max-md:w-8"
               src="/src/img/mobile-menu-close.svg"
               alt="Close Icon"
             />
@@ -91,22 +95,26 @@
           alt=""
         />
         <div
-          class="flex w-full max-w-[1920px] flex-col gap-12 px-24 max-lg:items-center max-lg:text-center"
+          class="mt-14 flex w-full max-w-[1920px] flex-col gap-12 px-24 max-lg:items-center max-lg:text-center max-md:px-12 max-sm:px-8"
         >
           <h1
-            class="w-[37rem] font-mont text-7xl font-bold !leading-tight max-2xl:w-[25rem] max-2xl:text-5xl"
+            class="w-[37rem] font-mont text-7xl font-bold !leading-tight max-2xl:w-[25rem] max-2xl:text-6xl max-md:text-5xl max-sm:w-[16rem] max-sm:text-4xl"
           >
             Empowering US Army Professionals
           </h1>
           <div
-            class="flex gap-8 text-base font-semibold tracking-wider max-md:text-sm lg:max-2xl:text-sm"
+            class="flex gap-8 text-base font-semibold tracking-wider max-md:w-full max-md:flex-col max-md:text-sm lg:max-2xl:text-sm"
           >
-            <a class="primary-btn bg-light px-8 py-4 text-black" href=""
+            <a
+              class="primary-btn max-md:primary-btn-wide bg-light px-8 py-4 text-black"
+              href=""
               >SIGN UP FREE</a
             >
             <a class="px-8 py-4 text-light" href="">CONTACT US</a>
           </div>
-          <p class="mt-20 text-xl font-light tracking-widest max-2xl:text-lg">
+          <p
+            class="mt-20 text-xl font-light tracking-widest max-2xl:text-lg max-md:mt-10 max-md:text-base max-sm:mt-0"
+          >
             Veteran Owned and Operated Small Business
           </p>
         </div>
@@ -115,7 +123,9 @@
       <!-- FEATURES SECTION -->
       <div class="overflow-x-clip">
         <section class="my-[15vh] flex w-full items-center justify-center">
-          <div class="flex w-full max-w-[1920px] gap-16 px-24 max-xl:flex-col">
+          <div
+            class="flex w-full max-w-[1920px] gap-16 px-24 max-xl:flex-col max-lg:gap-10 max-md:px-12 max-sm:px-8"
+          >
             <div class="flex-1">
               <h2
                 class="max-w-lg font-mont text-5xl font-semibold leading-[1.1] max-2xl:text-4xl"
@@ -136,7 +146,7 @@
             </div>
 
             <div
-              class="relative grid flex-[2] grid-cols-2 gap-16 max-2xl:gap-12 max-lg:grid-cols-1"
+              class="relative grid flex-[2] grid-cols-2 gap-16 max-2xl:gap-12 max-lg:grid-cols-1 max-lg:gap-10"
             >
               <img
                 class="absolute -left-96 -top-44 -z-10"
@@ -148,7 +158,7 @@
                 src="./img/blur2.svg"
                 alt=""
               />
-              <div class="card max-2xl:p-10">
+              <div class="card max-2xl:p-10 max-sm:p-5">
                 <img
                   class="w-14 max-2xl:w-12"
                   src="./img/BookBookmark.svg"
@@ -161,7 +171,7 @@
                   Track and manage your accomplishments over the year for free.
                 </p>
               </div>
-              <div class="card max-2xl:p-10">
+              <div class="card max-2xl:p-10 max-sm:p-5">
                 <img
                   class="w-14 max-2xl:w-12"
                   src="./img/Circuitry.svg"
@@ -175,7 +185,7 @@
                   performance remarks.
                 </p>
               </div>
-              <div class="card max-2xl:p-10">
+              <div class="card max-2xl:p-10 max-sm:p-5">
                 <img
                   class="w-14 max-2xl:w-12"
                   src="./img/UserCircle.svg"
@@ -189,7 +199,7 @@
                   Rater remarks.
                 </p>
               </div>
-              <div class="card max-2xl:p-10">
+              <div class="card max-2xl:p-10 max-sm:p-5">
                 <img
                   class="w-14 max-2xl:w-12"
                   src="./img/ClipboardText.svg"
@@ -203,7 +213,7 @@
                   help you stay on top.
                 </p>
               </div>
-              <div class="card max-2xl:p-10">
+              <div class="card max-2xl:p-10 max-sm:p-5">
                 <img
                   class="w-14 max-2xl:w-12"
                   src="./img/MedalMilitary.svg"
@@ -217,7 +227,7 @@
                   outstanding performance.
                 </p>
               </div>
-              <div class="card max-2xl:p-10">
+              <div class="card max-2xl:p-10 max-sm:p-5">
                 <img
                   class="w-14 max-2xl:w-12"
                   src="./img/Handshake.svg"
@@ -238,7 +248,7 @@
       <!-- FAQS SECTION -->
       <section class="my-[15vh] flex w-full items-center justify-center">
         <div
-          class="relative flex w-full max-w-[1920px] gap-16 px-24 max-xl:flex-col"
+          class="relative flex w-full max-w-[1920px] gap-16 px-24 max-xl:flex-col max-lg:gap-10 max-md:px-12 max-sm:px-8"
         >
           <img
             class="absolute -left-44 -top-32"
@@ -271,7 +281,7 @@
               class="accordion rounded-lg border border-[#81C3D730] bg-gradient-to-b from-[#0202029d] from-20% to-[#05284137] shadow-[0_0_20px_#81C3D720]"
             >
               <li
-                class="px-8 pt-8 font-mont text-2xl font-medium text-light max-2xl:px-6 max-2xl:pt-6 max-2xl:text-xl"
+                class="px-8 pt-8 font-mont text-2xl font-medium text-light max-2xl:px-6 max-2xl:pt-6 max-2xl:text-xl max-sm:text-lg"
               >
                 <div
                   class="accordion-item flex flex-col gap-6 border-b border-[#686868] pb-8 max-2xl:pb-6"
@@ -286,7 +296,7 @@
                   </div>
                   <div class="item-info active">
                     <p
-                      class="w-11/12 font-poppins text-lg font-light leading-normal tracking-wider text-light-grey max-2xl:text-base"
+                      class="w-11/12 font-poppins text-lg font-light !leading-relaxed tracking-wider text-light-grey max-2xl:text-base max-sm:w-full max-sm:!leading-normal max-sm:tracking-wide"
                     >
                       EvalGenie revolutionizes Army performance evaluations with
                       an AI-powered service, easing the process for NCOs,
@@ -298,7 +308,7 @@
                 </div>
               </li>
               <li
-                class="px-8 pt-8 font-mont text-2xl font-medium text-light max-2xl:px-6 max-2xl:pt-6 max-2xl:text-xl"
+                class="px-8 pt-8 font-mont text-2xl font-medium text-light max-2xl:px-6 max-2xl:pt-6 max-2xl:text-xl max-sm:text-lg"
               >
                 <div
                   class="accordion-item flex flex-col gap-6 border-b border-[#686868] pb-8 max-2xl:pb-6"
@@ -313,7 +323,7 @@
                   </div>
                   <div class="item-info">
                     <p
-                      class="w-11/12 font-poppins text-lg font-light leading-normal tracking-wider text-light-grey max-2xl:text-base"
+                      class="w-11/12 font-poppins text-lg font-light !leading-relaxed tracking-wider text-light-grey max-2xl:text-base max-sm:!leading-normal max-sm:tracking-wide"
                     >
                       Upon account creation, you will get limited access to
                       explore the available features. The Accomplishment Journal
@@ -327,7 +337,7 @@
                 </div>
               </li>
               <li
-                class="px-8 pt-8 font-mont text-2xl font-medium text-light max-2xl:px-6 max-2xl:pt-6 max-2xl:text-xl"
+                class="px-8 pt-8 font-mont text-2xl font-medium text-light max-2xl:px-6 max-2xl:pt-6 max-2xl:text-xl max-sm:text-lg"
               >
                 <div
                   class="accordion-item flex flex-col gap-6 border-b border-[#686868] pb-8 max-2xl:pb-6"
@@ -342,7 +352,7 @@
                   </div>
                   <div class="item-info">
                     <p
-                      class="w-11/12 font-poppins text-lg font-light leading-normal tracking-wider text-light-grey max-2xl:text-base"
+                      class="w-11/12 font-poppins text-lg font-light !leading-relaxed tracking-wider text-light-grey max-2xl:text-base max-sm:!leading-normal max-sm:tracking-wide"
                     >
                       EvalGenie is owned, operated, maintained, and hosted in
                       the United States. The founder and Managing Member is a
@@ -355,7 +365,7 @@
                 </div>
               </li>
               <li
-                class="px-8 pt-8 font-mont text-2xl font-medium text-light max-2xl:px-6 max-2xl:pt-6 max-2xl:text-xl"
+                class="px-8 pt-8 font-mont text-2xl font-medium text-light max-2xl:px-6 max-2xl:pt-6 max-2xl:text-xl max-sm:text-lg"
               >
                 <div
                   class="accordion-item flex flex-col gap-6 border-b border-[#686868] pb-8 max-2xl:pb-6"
@@ -370,7 +380,7 @@
                   </div>
                   <div class="item-info">
                     <p
-                      class="w-11/12 font-poppins text-lg font-light leading-normal tracking-wider text-light-grey max-2xl:text-base"
+                      class="w-11/12 font-poppins text-lg font-light !leading-relaxed tracking-wider text-light-grey max-2xl:text-base max-sm:!leading-normal max-sm:tracking-wide"
                     >
                       With the new NCOER/OER system in place, it is a career
                       killer to use generic, bland, boilerplate bullets or
@@ -383,7 +393,7 @@
                 </div>
               </li>
               <li
-                class="px-8 pt-8 font-mont text-2xl font-medium text-light max-2xl:px-6 max-2xl:pt-6 max-2xl:text-xl"
+                class="px-8 pt-8 font-mont text-2xl font-medium text-light max-2xl:px-6 max-2xl:pt-6 max-2xl:text-xl max-sm:text-lg"
               >
                 <div
                   class="accordion-item flex flex-col gap-6 pb-8 max-2xl:pb-6"
@@ -398,7 +408,7 @@
                   </div>
                   <div class="item-info">
                     <p
-                      class="w-11/12 font-poppins text-lg font-light leading-normal tracking-wider text-light-grey max-2xl:text-base"
+                      class="w-11/12 font-poppins text-lg font-light !leading-relaxed tracking-wider text-light-grey max-2xl:text-base max-sm:!leading-normal max-sm:tracking-wide"
                     >
                       We consistently consult with Infrastructure, Developer,
                       and Security consultants to ensure EvalGenie is safe. Our
@@ -422,7 +432,9 @@
         <section
           class="my-[15vh] flex w-full flex-col items-center justify-center"
         >
-          <div class="relative flex w-full max-w-[1920px] flex-col px-24">
+          <div
+            class="relative flex w-full max-w-[1920px] flex-col px-24 max-md:px-12 max-sm:px-8"
+          >
             <img
               class="absolute -right-80 -top-96 -z-10"
               src="./img/bg-lines.svg"
@@ -482,9 +494,9 @@
                 </form>
               </div>
             </div>
-            <div class="self-end">
+            <div class="self-end max-md:w-full">
               <button
-                class="primary-btn mt-16 bg-light px-12 py-4 font-poppins text-base font-semibold tracking-wider text-black max-2xl:text-sm"
+                class="primary-btn max-md:primary-btn-wide mt-16 bg-light px-12 py-4 font-poppins text-base font-semibold tracking-wider text-black max-2xl:text-sm max-md:w-full"
               >
                 SUBMIT
               </button>
@@ -496,7 +508,7 @@
       <!-- FOOTER -->
       <footer class="flex w-full justify-center pb-16 pt-[10vh] font-poppins">
         <div
-          class="relative flex w-full max-w-[1920px] justify-between px-24 max-lg:flex-col max-lg:gap-5"
+          class="relative flex w-full max-w-[1920px] justify-between px-24 max-lg:flex-col max-lg:gap-5 max-md:px-12 max-sm:px-8"
         >
           <img
             class="absolute -top-44 right-32"
