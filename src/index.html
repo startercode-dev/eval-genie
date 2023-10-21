@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,7 +16,7 @@
   <body class="bg-black text-white">
     <div class="relative overflow-y-clip">
       <div
-        class="overlay absolute left-0 top-0 z-10 hidden h-full w-full bg-[#02020233] backdrop-blur-sm 2xl:hidden"
+        class="overlay absolute left-0 top-0 z-10 hidden h-full w-full bg-[#02020233] backdrop-blur-sm xl:hidden"
       ></div>
       <!-- NAV -->
       <header
@@ -30,57 +30,65 @@
             alt="logo"
             class="w-60 max-lg:w-52 max-md:w-40"
           />
-          <nav class="flex gap-12 text-base max-2xl:hidden">
-            <a href="">HOME</a>
-            <a href="">FEATURES</a>
-            <a href="">FAQS</a>
-            <a href="">CONTACT US</a>
-            <div
-              class="flex flex-col items-center gap-4 border-t pt-4 2xl:hidden"
+
+          <div class="flex items-center">
+            <!-- MOBILE NAV -->
+            <nav class="mobile-nav max-sm:gap-8 xl:hidden">
+              <a href="/">HOME</a>
+              <a class="nav-features-btn" href="#features-section">FEATURES</a>
+              <a class="nav-faqs-btn" href="#faqs-section">FAQS</a>
+              <a class="nav-contact-btn" href="#contact-section">CONTACT US</a>
+              <div
+                class="flex flex-col items-center gap-4 border-t pt-4 xl:hidden"
+              >
+                <a class="px-10 py-4" href="">LOGIN</a>
+                <a
+                  class="primary-btn max-xl:primary-btn-wide w-80 bg-light px-10 py-4 text-center text-black"
+                  href=""
+                  >REGISTER</a
+                >
+              </div>
+            </nav>
+
+            <div class="mobile-menu hidden max-xl:block">
+              <img
+                class="menu w-10 max-lg:w-9 max-md:w-8"
+                src="/src/img/mobile-menu-hamburger.svg"
+                alt="Hamburger Icon"
+              />
+              <img
+                class="close hidden w-10 max-md:w-8"
+                src="/src/img/mobile-menu-close.svg"
+                alt="Close Icon"
+              />
+            </div>
+            <!-- ^^^^^ -->
+
+            <nav
+              class="flex gap-12 border-r pr-10 text-base max-2xl:text-sm max-xl:hidden"
             >
+              <a href="/">HOME</a>
+              <a class="nav-features-btn" href="/#features-section">FEATURES</a>
+              <a class="nav-faqs-btn" href="#faqs-section">FAQS</a>
+              <a class="nav-contact-btn" href="#contact-section">CONTACT US</a>
+              <div
+                class="flex flex-col items-center gap-4 border-t pt-4 xl:hidden"
+              >
+                <a class="px-10 py-4" href="">LOGIN</a>
+                <a
+                  class="primary-btn w-80 bg-light px-10 py-4 text-center text-black"
+                  href=""
+                  >REGISTER</a
+                >
+              </div>
+            </nav>
+
+            <div class="flex text-base max-2xl:text-sm max-xl:hidden">
               <a class="px-10 py-4" href="">LOGIN</a>
-              <a
-                class="primary-btn w-80 bg-light px-10 py-4 text-center text-black"
-                href=""
+              <a class="primary-btn bg-light px-10 py-4 text-black" href=""
                 >REGISTER</a
               >
             </div>
-          </nav>
-          <!-- MOBILE NAV -->
-          <nav class="mobile-nav max-sm:gap-8 2xl:hidden">
-            <a href="">HOME</a>
-            <a href="">FEATURES</a>
-            <a href="">FAQS</a>
-            <a href="">CONTACT US</a>
-            <div
-              class="flex flex-col items-center gap-4 border-t pt-4 2xl:hidden"
-            >
-              <a class="px-10 py-4" href="">LOGIN</a>
-              <a
-                class="primary-btn max-2xl:primary-btn-wide w-80 bg-light px-10 py-4 text-center text-black"
-                href=""
-                >REGISTER</a
-              >
-            </div>
-          </nav>
-          <!-- ^^^^^ -->
-          <div class="flex gap-8 max-2xl:hidden">
-            <a class="px-10 py-4" href="">LOGIN</a>
-            <a class="primary-btn bg-light px-10 py-4 text-black" href=""
-              >REGISTER</a
-            >
-          </div>
-          <div class="mobile-menu hidden max-2xl:block">
-            <img
-              class="menu w-10 max-lg:w-9 max-md:w-8"
-              src="/src/img/mobile-menu-hamburger.svg"
-              alt="Hamburger Icon"
-            />
-            <img
-              class="close hidden w-10 max-md:w-8"
-              src="/src/img/mobile-menu-close.svg"
-              alt="Close Icon"
-            />
           </div>
         </div>
       </header>
@@ -121,8 +129,10 @@
       </section>
 
       <!-- FEATURES SECTION -->
-      <div class="overflow-x-clip">
-        <section class="my-[15vh] flex w-full items-center justify-center">
+      <div class="overflow-x-clip" id="features-section">
+        <section
+          class="my-[8vh] flex w-full items-center justify-center py-[7vh]"
+        >
           <div
             class="features-section flex w-full max-w-[1920px] gap-16 px-24 max-xl:flex-col max-lg:gap-10 max-md:px-12 max-sm:px-8"
           >
@@ -151,12 +161,12 @@
               class="card-container init-animation relative grid flex-[2] grid-cols-2 gap-16 transition-all delay-300 duration-500 ease-in max-2xl:gap-12 max-lg:grid-cols-1 max-lg:gap-10"
             >
               <img
-                class="absolute -left-96 -top-44 -z-10"
+                class="absolute -left-96 -top-44 -z-10 max-md:-left-40"
                 src="./img/blur1.svg"
                 alt=""
               />
               <img
-                class="absolute -right-[32rem] top-24 -z-10"
+                class="absolute -right-[32rem] top-24 -z-10 max-md:-right-80 max-sm:-right-48"
                 src="./img/blur2.svg"
                 alt=""
               />
@@ -248,12 +258,15 @@
       </div>
 
       <!-- FAQS SECTION -->
-      <section class="my-[15vh] flex w-full items-center justify-center">
+      <section
+        class="my-[8vh] flex w-full items-center justify-center py-[7vh]"
+        id="faqs-section"
+      >
         <div
           class="faqs-section relative flex w-full max-w-[1920px] gap-16 px-24 max-xl:flex-col max-lg:gap-10 max-md:px-12 max-sm:px-8"
         >
           <img
-            class="absolute -left-44 -top-32"
+            class="absolute -left-44 -top-32 -z-10"
             src="./img/bg-dots.svg"
             alt=""
           />
@@ -432,9 +445,9 @@
       </section>
 
       <!-- CONTACT SECTION -->
-      <div class="overflow-x-clip">
+      <div class="overflow-x-clip" id="contact-section">
         <section
-          class="my-[15vh] flex w-full flex-col items-center justify-center"
+          class="my-[8vh] flex w-full flex-col items-center justify-center py-[7vh]"
         >
           <div
             class="relative flex w-full max-w-[1920px] flex-col px-24 max-md:px-12 max-sm:px-8"
@@ -466,9 +479,12 @@
                   <span class="font-medium text-light">Email:</span>
                   support@evalgenie.com
                 </p>
-                <div
-                  class="h-[300px] w-full bg-zinc-900 max-xl:order-first max-xl:mb-6"
-                ></div>
+
+                <img
+                  src="./img/googlemap.png"
+                  class="h-[300px] w-full bg-zinc-900 object-cover max-xl:order-first max-xl:mb-6"
+                  alt="google-map"
+                />
               </div>
 
               <div
@@ -521,7 +537,7 @@
           class="relative flex w-full max-w-[1920px] justify-between px-24 max-lg:flex-col max-lg:gap-5 max-md:px-12 max-sm:px-8"
         >
           <img
-            class="absolute -top-44 right-32"
+            class="absolute -top-44 right-32 -z-10"
             src="./img/blur-footer.svg"
             alt=""
           />
@@ -571,18 +587,21 @@
           <div
             class="flex flex-col items-end justify-between max-lg:items-start max-lg:gap-10 lg:max-2xl:text-sm"
           >
-            <div
+            <nav
               class="mt-5 flex gap-20 whitespace-nowrap font-semibold max-lg:flex-col max-lg:gap-8"
             >
               <a href="/" class="home-link bold">HOME</a>
-              <a href="#features-section" class="features-link bold"
+              <a
+                class="nav-features-btn"
+                href="#features-section"
+                class="features-link bold"
                 >FEATURES</a
               >
-              <a href="#faqs-section" class="faqs-link bold">FAQS</a>
-              <a href="#contact-section" class="contact-link bold"
+              <a class="nav-faqs-section" href="#faqs-section" class="faqs-link bold">FAQS</a>
+              <a class="nav-contact-section" href="#contact-section" class="contact-link bold"
                 >CONTACT US</a
               >
-            </div>
+            </nav>
             <p class="copyright">
               © 2023 EvalGenie, LLC. - All Rights Reserved
             </p>
