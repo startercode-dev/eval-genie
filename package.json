@@ -14,8 +14,8 @@
     "bin": "./bin/cli.js",
     "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead",
     "scripts": {
-        "dev": "parcel src/index.html --dist-dir src/dist --open",
-        "build": "parcel build src/index.html --dist-dir src/dist"
+        "dev": "parcel index.html --dist-dir src/dist --open",
+        "build": "parcel build index.html --dist-dir src/dist"
     },
     "repository": {
         "type": "git",
