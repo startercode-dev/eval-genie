@@ -107,44 +107,32 @@ class SmoothScroll {
         this.featuresBtn = $('.nav-features-btn');
         this.faqsBtn = $('.nav-faqs-btn');
         this.contactBtn = $('.nav-contact-btn');
-        this.featuresView = $('#features-section')[0];
-        this.faqsView = $('#faqs-section')[0];
-        this.contactView = $('#contact-section')[0];
+        this.featuresView = $('#features-section');
+        this.faqsView = $('#faqs-section');
+        this.contactView = $('#contact-section');
         this.events();
     }
 
     events() {
-        this.featuresBtn.on('click', this.smoothScrollIntoView.bind(this));
-        this.faqsBtn.on('click', this.smoothScrollIntoView.bind(this));
-        this.contactBtn.on('click', this.smoothScrollIntoView.bind(this));
+        this.featuresBtn.on(
+            'click',
+            this.smoothScrollIntoView.bind(this, this.featuresView),
+        );
+        this.faqsBtn.on(
+            'click',
+            this.smoothScrollIntoView.bind(this, this.faqsView),
+        );
+        this.contactBtn.on(
+            'click',
+            this.smoothScrollIntoView.bind(this, this.contactView),
+        );
     }
 
-    smoothScrollIntoView(e) {
-        switch (e.target.className) {
-            case 'nav-features-btn':
-                this.featuresView.scrollIntoView({
-                    behavior: 'smooth', // Add smooth scrolling behavior
-                    block: 'start', // Scroll to the top of the element
-                    blockOffset: 100,
-                });
-                break;
-            case 'nav-faqs-btn':
-                this.faqsView.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start',
-                    blockOffset: 100,
-                });
-                break;
-            case 'nav-contact-btn':
-                this.contactView.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start',
-                    blockOffset: 100,
-                });
-                break;
-            default:
-                break;
-        }
+    smoothScrollIntoView(section) {
+        section[0].scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        });
     }
 }
 
